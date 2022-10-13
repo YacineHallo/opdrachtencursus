@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tables</title>
+  </head>
+  <body>
+    <!--Open the table tag and add a border of 1px. The border will help us understand the rows and columns-->
+    <table border="1">
+      <!--Add the first row with TR (TableRow). 
+        We use rowspan and colspan to "stretch" the cells-->
+      <tr>
+        <!--Rowspan will stretch the cell over multiple rows. TD = TableData-->
+        <td rowspan="2"></td>
+        <!--Colspan will stretch the cell over multiple cols-->
+        <td colspan="2">A common header for 2 subheads</td>
+        <!--TH = TableHeading-->
+        <th rowspan="2" >Header 3</th>
+      </tr>
+      <tr>
+        <th>Header1</th>
+        <th>Header2</th>
+      </tr>
+      <tr>
+        <th>Thing A</th>
+        <td>Data A1</td>
+        <td>Data A1</td>
+        <td>Data A3</td>
+      </tr>
+      <tr>
+        <th>Thing B</th>
+        <td>Data B1</td>
+        <td>Data B1</td>
+        <td>Data B3</td>
+      </tr>
+      <tr>
+        <th>Thing C</th>
+        <td>Data C1</td>
+        <td>Data C1</td>
+        <td>Data C3</td>
+      </tr>
+    </table>
+  </body>
+</html>

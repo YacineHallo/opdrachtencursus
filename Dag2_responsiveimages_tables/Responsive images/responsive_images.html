@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive images</title>
+  </head>
+  <body>
+    <!--Same image, different sizes-->
+    <img
+      srcset="./140.jpeg 400w, 
+      ./286.jpeg 500w, 
+      ./287.jpeg 700w"
+      sizes="100vw"
+      alt="Cat"
+    />
+
+    <!--Different image on different screen sizes-->
+    <picture>
+        <source media="(min-width: 992px)" srcset="http://placekitten.com/g/992/400">
+        <source media="(min-width: 768px)" srcset="http://placekitten.com/g/768/400">
+        <img src="http://placekitten.com/g/250/400" >
+    </picture>
+  </body>
+</html>

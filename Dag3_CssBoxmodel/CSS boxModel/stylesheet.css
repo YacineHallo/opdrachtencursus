@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+.element-parent {
+  background: red;
+  height: 200vh;
+  width: 100vw;
+}
+
+.box {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  display:inline-block;
+}
+
+.box1 {
+  background: green;
+}
+
+.box2 {
+  background: maroon;
+}
+
+.box3 {
+  background: blue;
+  position: relative;
+}
+
+.box3child {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: magenta;
+  display: inline-block;
+}

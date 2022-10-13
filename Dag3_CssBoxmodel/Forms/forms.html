@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <form id="orderForm">
+      <h1>Bestel hier uw pizza!</h1>
+      <fieldset>
+        <legend>Uw pizza</legend>
+
+        <h2>Kies formaat</h2>
+        <div>
+          <input name="pizzaSize" id="size-20" value="20" type="radio" />
+          <label for="size-20">20 cm</label>
+        </div>
+        <div>
+          <input name="pizzaSize" id="size-25" value="25" type="radio" />
+          <label for="size-25">25 cm</label>
+        </div>
+        <div>
+          <input name="pizzaSize" id="size-30" value="30" type="radio" />
+          <label for="size-30">30 cm</label>
+        </div>
+        <div>
+          <input name="pizzaSize" id="size-35" value="35" type="radio" />
+          <label for="size-35">35 cm</label>
+        </div>
+        <h2>Kies uw saus</h2>
+        <div>
+          <input name="pizzaSauce" id="tomato" value="tomato" type="radio" />
+          <label for="tomato">Tomatensaus</label>
+        </div>
+        <div>
+          <input name="pizzaSauce" id="garlic" value="garlic" type="radio" />
+          <label for="garlic">Knoflooksaus</label>
+        </div>
+        <div>
+          <input name="pizzaSauce" id="none" value="none" type="radio" />
+          <label for="none">Geen saus</label>
+        </div>
+        <h2>Kies uw (extra) toppings</h2>
+        <div>
+          <input name="toppings" id="ham" value="ham" type="checkbox" />
+          <label for="ham">Ham</label>
+        </div>
+        <div>
+          <input name="toppings" id="cheese" value="cheese" type="checkbox" />
+          <label for="cheese">Kaas</label>
+        </div>
+        <div>
+          <input
+            name="toppings"
+            id="pineaple"
+            value="pineaple"
+            type="checkbox"
+          />
+          <label for="pineaple">Ananas</label>
+        </div>
+        <div>
+          <input
+            name="toppings"
+            id="artichoke"
+            value="artichoke"
+            type="checkbox"
+          />
+          <label for="artichoke">Artichokken</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Uw gegevens</legend>
+        <div>
+            <label for="name">Uw naam</label>
+            <input type="text" id="name" name="name" placeholder="bv. Jan Smit" required>
+        </div>
+        <div>
+            <label for="name">Adres</label>
+            <input type="text" id="adress" name="adress" placeholder="bv. Lindenlaan 398" required>
+        </div>
+        <div>
+            <label for="name">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="bv. jan@amsterdam.nl" required>
+        </div>
+        <div>
+            <label for="name">Telefoonnummer</label>
+            <input type="tel" id="tel" name="tel" placeholder="020-1234567" required>
+        </div>
+        <div>
+            <label for="comment">Opmerkingen</label>
+            <textarea rows="5" form="orderForm" id="comment" name="comment" placeholder="Extra wensen, opmerkingen of bezorginstructies"></textarea>
+        </div>
+
+      </fieldset>
+      <input type="submit" value="Versturen">
+      <input type="reset" value="Leeg formulier">
+    </form>
+  </body>
+</html>
