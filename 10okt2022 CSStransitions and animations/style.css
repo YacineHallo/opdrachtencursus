@@ -1,0 +1,46 @@
+header{
+    background-color: orange;
+}
+
+.button{
+    width: 60rem;
+    height: 40rem;
+    background-color: aqua;
+    border: 10px solid red;
+    color: blue;
+    border-radius: 100%;
+    font-weight: 900;
+    text-align: center;
+   
+}
+
+
+/* hier geef je aan hoeveel tijd en hoe de volgende eigenschappen worden gewijzigd
+eigenschap tijdsduur hoe (ease-in of bijv linear) */
+.button {
+    transition: background-color 0.5s ease-out, 
+    color 0.3ms ease-in,
+    letter-spacing 0.4ms ease-in-out,
+    border 500ms ease-in-out,
+    font-weight 500ms ease-in-out,
+    text-align 500ms ease-in-out,
+    border-radius 500ms ease-in;
+    ;
+    }
+/*  hier in staat wat er gewijzigd moet worden, dit hoeft niet perse ook bij de transition terug te komen
+dan wijzigt het gewoon meteen ip */
+    .button:hover,
+    .button:focus {
+    background-color: red;
+    letter-spacing: 40px;
+    color: palevioletred;
+    border:30px solid burlywood;
+    font-weight: bolder;
+    text-align: left;
+    border-radius:50px;
+    box-shadow:5px 10px #888888;
+    
+    }
+    
+    
+    

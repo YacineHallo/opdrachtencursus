@@ -1,0 +1,12 @@
+section {
+    background: red;
+    margin-bottom: 20px;
+}
+
+div {
+ background: yellow;
+ height: 50px;
+ width: 50px;
+ /* Comment out the float property and see what happens in the browser. */
+ float: left;
+}

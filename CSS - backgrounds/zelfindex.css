@@ -1,0 +1,36 @@
+div{
+    width: 100vw;
+    height: 100vh;
+    background-color:blue
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    
+}
+
+.een{
+    background-image: url(images/Afbeelding\ 087.jpg);
+   background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.twee{
+    background-image: url(images/Width200.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.drie{
+    background-image: url(images/2015-04-02\ 22.20.05.jpg);
+    background-size: 120px 100px;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+   }
+
+.vier{
+    background-image: linear-gradient(orange,  magenta);
+    /* background: linear-gradient(orange, magenta); */
+}

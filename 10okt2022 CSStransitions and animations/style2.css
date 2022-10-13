@@ -1,0 +1,125 @@
+/* .circel{
+    background-color: aqua;
+    border: 3px solid black;
+    height: 8rem;
+    width: 8 rem;
+    border-radius: 10px;
+} */
+
+.circel{
+    border: 1px solid red;
+    background-color:rgb(0, 255, 38);
+    height: 100px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    width: 100px;
+    position: relative;
+}
+
+.wijzer1{
+    width: 4px;
+    height:40px;
+   background-color: black;
+   position: absolute; 
+    left: 50px;
+    top: 50px;
+    transition:transform 5s ease-in-out;
+    transform-origin: center top;
+
+}
+
+.wijzer2{    
+    width: 2px;
+    height:20px;
+   background-color: red;
+      position: absolute; 
+    left: 50px;
+    top: 50px;
+    transition:transform 10s ease-in-out;
+    transform-origin: center top;
+
+     
+}
+
+/* .wijzer1:hover,.wijzer2:hover,.wijzer2:focus,
+.wijzer1:focus
+{
+    transform: rotate(360deg);
+    transform-origin: center top;
+} */
+ 
+@keyframes colorscircel {
+    0% { background-color: rgba(255, 0, 0, 0.293); }
+    20% { background-color: rgba(255, 166, 0, 0.187); }
+    40% { background-color: rgba(255, 255, 0, 0.406); }
+    80% { background-color: blue; }
+    100% { background-color: red; }
+    }
+    
+        .circel{
+animation-name: colorscircel;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+
+    }
+
+    @keyframes rotatieswijzers {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(45deg);}
+    40% {transform: rotate(180deg);}
+    80% {transform: rotate(270deg); }
+    100% {transform: rotate(360deg);}
+    }
+       
+    @keyframes colorswijzer1 {
+        0% { background-color: rgb(60, 255, 0); }
+        20% { background-color: brown; }
+        40% { background-color: white; }
+        80% { background-color: black; }
+        100% { background-color:blueviolet; }
+        }
+
+ @keyframes colorswijzer2 {
+            0% { background-color: rgb(115, 0, 255); }
+            20% { background-color: rgb(255, 0, 208); }
+            40% { background-color: lightblue; }
+            80% { background-color: lightcoral; }
+            100% { background-color: purple; }
+            }
+
+.wijzer1 {
+animation: rotatieswijzers 5s infinite,
+colorswijzer1 5s infinite;
+
+}
+
+.wijzer2 {
+    animation: rotatieswijzers 5s infinite,
+    colorswijzer2 5s infinite;
+}
+
+img{
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    opacity:1;
+}
+
+
+@keyframes imgvaag {
+    0% {opacity:1.0;}
+   15% {opacity:0.75;}
+    30% {opacity:0.5;}
+    45% {opacity:0.25;}
+    60% {opacity: 0;}
+    75% {opacity:0.25;}
+    90% {opacity:0.5;}
+    100% {opacity:0.75;}
+   
+    }
+
+    img{
+animation-name: imgvaag;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}

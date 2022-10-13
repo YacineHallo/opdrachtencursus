@@ -1,0 +1,17 @@
+/*This is a simple example of a grid container/child relation. Play around with changing the grid and column properties.
+Check https://css-tricks.com/snippets/css/complete-guide-grid/ for more details. */
+
+section {
+    background: red;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    height: 500px;
+}
+
+div {
+ background: yellow;
+ height: 100px;
+ border: 1px solid blue;
+}
